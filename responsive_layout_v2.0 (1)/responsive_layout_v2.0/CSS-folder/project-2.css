@@ -1,0 +1,198 @@
+
+/*------ Base Element Style*---------*/
+* {
+ box-sizing:border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+/*------------ Main Styles------------*/
+.main-header,
+.main-nav {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+}
+.main-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color:lightgrey;
+}
+
+.main-header h1 {
+  order: -1;
+
+
+}
+.main-header p{
+  order: 4;
+}
+
+.profile-picture {
+  align-self: center;
+  order: 3;
+  padding: 5%;
+  display: block;
+}
+
+.main-nav {
+  margin-top: 1.5em;
+  order: 2;
+}
+
+.main-nav li {
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+}
+
+.main-nav a {
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 0.4em;
+}
+
+.main-nav a:hover {
+  color: lightgreen;
+  transition: 0.5s
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12%;
+  padding-bottom: 10%;
+  flex-basis: auto;
+  visibility: auto;
+  margin: auto;
+  background-color: white;
+}
+.contact {
+  display: block;
+  background-color:lightgrey;
+
+
+
+
+}
+.main-footer {
+
+}
+
+.secondary-nav {
+  background-color:white;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  display: block;
+
+
+}
+ul,
+li {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ text-transform: uppercase;
+
+ }
+ img {
+   max-width: 100%;
+   height: auto;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+/* Main Sections-*/
+.main img {
+  position: relative;
+}
+.main figcaption {
+  position: sticky;
+
+}
+.portfolio {
+  display: block;
+
+
+
+}
+.marketing-page {
+  display: block;
+}
+
+.search-page {
+  display: block;
+
+}
+.travel-app {
+  display: block;
+}
+.photo-galery {
+  display: block;
+}
+.calculator {
+  display: block;
+
+}
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+/* Media Queries */
+
+@media  (min-width:320px) {
+
+}
+
+
+@media  (min-width:768px) {
+  .main-header {
+    height: 200px;
+  }
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 3em;
+  }
+  .main-header,
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav a {
+    border-color: trasparent;
+  }
+}
+
+
+
+@media  (min-width:1024px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
